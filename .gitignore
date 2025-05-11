@@ -1,0 +1,23 @@
+# SQLite database
+database.sqlite
+*.db
+*.sqlite
+*.sqlite3
+
+# PHP specific
+vendor/
+composer.lock
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE specific (common ones)
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.user 

@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    ports:
+      - "8088:80"
+    volumes:
+      - ./src:/var/www/html/
+    # The web server needs write permissions to the SQLite file and its directory.
+    # We can set this up by running as the www-data user, or by changing permissions.
+    # For simplicity in this example, Apache's default user (often www-data) should have write access to /var/www/html/
+    # if the volume mount doesn't restrict it. The PHP script will create the SQLite file.
+    # If permission issues arise, you might need to explicitly set file permissions or user. 
